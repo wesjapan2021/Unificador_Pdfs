@@ -210,10 +210,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>PDF Unifier Pro</h1>
+        <h1>WES JAPAN PDF Unificador Pro</h1>
         <div class="drop-zone" id="dropZone">
             <i class="fas fa-file-pdf"></i>
-            <p>Arrastra y suelta tus archivos PDF aquí</p>
+            <p>Deslisa y suelta tus archivos PDF aquí</p>
             <p>o</p>
             <button class="select-button" onclick="document.getElementById('fileInput').click()">
                 <i class="fas fa-upload"></i> Seleccionar archivos
@@ -319,8 +319,8 @@
                 const a = document.createElement('a');
                 a.href = url;
                 const now = new Date();
-                const formattedDate = `${now.getDate()}_${now.getMonth() + 1}_${now.getFullYear()}`;
-                a.download = `CATALOGO_${formattedDate}_WES_JAPAN.pdf`;
+                const formattedDate = `${now.getDate()}_${now.getMonth(MM) + 1}_${now.getFullYear()}`;
+                a.download = `CATALOGO_IYEPEREZ_WES_${formattedDate}.pdf`;
                 a.click();
                 
                 URL.revokeObjectURL(url);
