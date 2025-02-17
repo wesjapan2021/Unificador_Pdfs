@@ -8,8 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
     <style>
         :root {
-            --primary: #2563eb;
-            --secondary: #3b82f6;
+            --primary: #58100D;
+            --secondary: #7B7978;
             --success: #10b981;
             --background: #f8fafc;
             --card: #ffffff;
@@ -318,7 +318,9 @@
                 
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'documentos_unidos.pdf';
+                const now = new Date();
+                const formattedDate = `${now.getDate()}_${now.getMonth() + 1}_${now.getFullYear()}`;
+                a.download = `CATALOGO_${formattedDate}_WES_JAPAN.pdf`;
                 a.click();
                 
                 URL.revokeObjectURL(url);
