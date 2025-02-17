@@ -321,7 +321,7 @@
                 const now = new Date();
                 const monthNames = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
                 const formattedDate = `${now.getDate()}_${monthNames[now.getMonth()]}_${now.getFullYear()}`;
-                a.download = `CATALOGO_CATALOGO_IYEPEREZ_WES_${formattedDate}.pdf`;
+                a.download = `CATALOGO_${formattedDate}_IYEPEREZ_WES_JAPAN.pdf`;
                 a.click();
                                 
                 URL.revokeObjectURL(url);
