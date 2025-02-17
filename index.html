@@ -319,7 +319,7 @@
                 const a = document.createElement('a');
                 a.href = url;
                 const now = new Date();
-                const formattedDate = `${now.getDate()}_${now.getMonth(MM) + 1}_${now.getFullYear()}`;
+                const formattedDate = `${now.getDate()}_${now.getMonth() + 1}_${now.getFullYear()}`;
                 a.download = `CATALOGO_IYEPEREZ_WES_${formattedDate}.pdf`;
                 a.click();
                 
