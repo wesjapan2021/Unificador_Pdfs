@@ -319,10 +319,11 @@
                 const a = document.createElement('a');
                 a.href = url;
                 const now = new Date();
-                const formattedDate = `${now.getDate()}_${now.getMonth() + 1}_${now.getFullYear()}`;
-                a.download = `CATALOGO_IYEPEREZ_WES_${formattedDate}.pdf`;
+                const monthNames = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"];
+                const formattedDate = `${now.getDate()}_${monthNames[now.getMonth()]}_${now.getFullYear()}`;
+                a.download = `CATALOGO_CATALOGO_IYEPEREZ_WES_${formattedDate}.pdf`;
                 a.click();
-                
+                                
                 URL.revokeObjectURL(url);
                 progressBar.style.width = '100%';
                 
